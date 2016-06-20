@@ -3,15 +3,9 @@
       <article class="blog-article">
         <p class="type">{{ .Type }}</p>
         <h1>{{ .Title }}</h1>
-        <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
         {{ .Content }}
-        <ul class="taglist">
-          <li>Test </li>
-          <li>Article</li>
-          <li>WordPresss</li>
-        </ul>
         <hr>
-        <p class="author">Author Name</p>
+        <p class="date">Modifiziert {{ .Date.Format "Jan 2, 2006" }}</p>
       </article>
     </main>
 {{ partial "footer.html" . }}
