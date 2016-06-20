@@ -1,10 +1,18 @@
 ####################
 # Page Settings
 ####################
-baseurl = "localhost:1313"
+baseurl = "https://hugo.calyrium.org/"
 languageCode = "de-DE"
 title = "Calyrium.org"
-copyright = "Copyright 2016 calyrium.org"
+author = "Kreativmonkey"
+copyright = "Copyright 2016 Kreativmonkey"
+
+###################
+## Link Settings
+###################
+#[permalinks]
+#  post = "/:year/:month/:title/"
+#  page = "/:title/"
 
 ####################
 # System Settings
@@ -37,22 +45,20 @@ PygmentsCodeFences = false
 category =      "categories"
 tag =           "tags"
 
-
 [Params]
 AuthorName =    "kreativmonkey"
+github =        "kreativmonkey"
+youtube =       "UCbwr9WE1ksW6XttEOuEiTeQ"
+#bitbucket =    "floch"
+flickr =        "kreativmonkey"
+twitter =       "kreativmonkey"
+facebook =      "liveras"
+#email =        "mail@fredrikloch.me"
+description =   ""
+#cv =           "/pages/cv"
+#legalnotice =  "/pages/legal-notice"
+#muut =         "fredrikloch"
+#linkedin =     "fredrikloch"
 #cover =        "/images/background-cover.jpg"
 #logo =         "/img/logo-1.jpg"
 
-[Author]
-  name = 	"Sebastian Preisner"
-  image =	"/images/profile.jpg"
-  email = 	"admin@calyrium.org"
-  facebook = 	"liveras"
-  github = 	"kreativmonkey"
-  #bitbucket =	"floch"
-  twitter = 	"kreativmonkey"
-  flickr =  	"kreativmonkey"
-  #linkedin = 	"pub/username/X/YYY/ZZZ"
-  #stackoverflow = "XXXXXXX/username"
-  #soundcloud = "username"
-  #wikipedia = 	"username"
