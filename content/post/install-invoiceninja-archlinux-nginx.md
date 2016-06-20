@@ -5,16 +5,36 @@
     "Tutorial"
   ],
   "Description": "",
+  "Draft": false,
   "Tags": [
+    "Invoice",
     "Nginx",
     "Arch Linux",
-    "Invoiceninja",
-    "Invoice"
+    "Invoiceninja"
+  ],
+  "author": "",
+  "categories": [
+    "WordPress",
+    "Develop"
   ],
   "date": "2016-05-22T12:16:00",
+  "description": "Um die Anzahl der Artikelaufrufe in Wordpress zu erhalten benötigt es kein Plugin. Mit einigen Zeilen Code kannst du dir ein Plugin getrost sparen.",
   "draft": false,
+  "featured": "false",
+  "featuredalt": "",
+  "featuredpath": "",
+  "image": "image.jpg",
+  "linktitle": "",
   "menu": "blog",
-  "title": "Install Invoiceninja Archlinux with Nginx"
+  "tags": [
+    "No Plugin",
+    "Funktion",
+    "Artikel",
+    "WordPress"
+  ],
+  "title": "Install Invoiceninja Archlinux with Nginx",
+  "toc": true,
+  "type": "post"
 }
 
 In this tutorial i’ll see how to install Invoice Ninja on a Arch Linux VPS with MariaDB, PHP-FPM and Nginx. Invoice Ninja is a free, open-source solution for invoicing and billing customers and it’s based on Laravel framework.
@@ -59,11 +79,13 @@ When the installation is complete, run the following command to secure your inst
 
 Next, we need to create a database for our Invoice Ninja instance.
 
+```bash
     mysql -u root -p
     MariaDB [(none)]> CREATE DATABASE ininja;
     MariaDB [(none)]> GRANT ALL PRIVILEGES ON ininja.* TO 'ininjauser'@'localhost' IDENTIFIED BY 'ininjauser_passwd';
     MariaDB [(none)]> FLUSH PRIVILEGES;
     MariaDB [(none)]> \q
+```
 
 Install and configure PHP and Nginx
 -----------------------------------
@@ -74,20 +96,20 @@ You should install Nginx, PHP and all necessary extensions:
 
 Uncomment the following Modules for PHP `vim /etc/php/php.ini`:
 
-```
-extension=curl.so
-extension=gd.so
-extension=gmp.so
-extension=iconv.so 
-extension=mcrypt.so 
-extension=pdo_mysql.so
-extension=zip.so
-```
+
+    extension=curl.so
+    extension=gd.so
+    extension=gmp.so
+    extension=iconv.so 
+    extension=mcrypt.so 
+    extension=pdo_mysql.so
+    extension=zip.so
+
 
 ### Setup Nginx
 Generate SSL certificate:
 
-{{< highlight bash >}}
+```bash
 mkdir -p /etc/nginx/ssl
 cd /etc/nginx/ssl
 openssl genrsa -des3 -passout pass:x -out ininja.pass.key 2048
@@ -95,11 +117,11 @@ openssl rsa -passin pass:x -in ininja.pass.key -out ininja.key
 rm ininja.pass.key
 openssl req -new -key ininja.key -out ininja.csr
 openssl x509 -req -days 365 -in ininja.csr -signkey ininja.key -out ininja.crt
-{{< / highlight >}}
+```
     
 Create a new Nginx Serverblock `vim /etc/nginx/sites-availeble/invoiceninja`:
 
-{{< highlight Nginx configuration file >}}
+```Nginx
 server {
     listen  80;
     listen  [::]:80 ipv6only=on;
@@ -160,13 +182,14 @@ server {
         include /etc/nginx/fastcgi_params;
     }
 }
-{{< / highlight >}}
+```
 
 
 Activate the server block by creating a symbolic link:
-{{< highlight bash >}}
+
+```bash
 ln -s /etc/nginx/sites-available/your_ininja_site /etc/nginx/sites-enabled/your_ininja_site
-{{< / highlight >}}
+```
 
 ### Enable PHP and Nginx
 
@@ -179,12 +202,16 @@ Install Invoice Ninja
 
 Create a root directory for your application.
 
-    mkdir -p /srv/http/your_ninja_site
+```bash
+mkdir -p /srv/http/your_ninja_site
+```
 
 Clone the project repository from GitHub:
 
-    git clone https://github.com/hillelcoren/invoice-ninja.git /srv/http/your_ininja_site
-    cd  /srv/http/your_ininja_site
+```bash
+git clone https://github.com/hillelcoren/invoice-ninja.git /srv/http/your_ininja_site
+cd  /srv/http/your_ininja_site
+```
 
 Install all dependencies:
 
@@ -196,7 +223,7 @@ Set the environment to production:
 
 Open the database.php file and edit the database settings `vim config/database.php`:
 
-{{< highlight mysql >}}
+```mysql
 'mysql' => [
         'driver'    => 'mysql',
         'host'      => 'localhost',
@@ -207,7 +234,7 @@ Open the database.php file and edit the database settings `vim config/database.p
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',
         ],
-{{< / highlight >}}
+```
 
 Run database migrations and seed the database with sample data:
 
