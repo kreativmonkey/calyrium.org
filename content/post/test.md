@@ -5,7 +5,7 @@ Tags = ["Development", "golang"]
 date = "2016-06-21T00:00:36+02:00"
 menu = "main"
 title = "test"
-
+draft = false
 +++
 # Dies ist ein Test
 
