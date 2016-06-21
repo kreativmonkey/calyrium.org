@@ -12,38 +12,18 @@ Mit dem Folgenden kleinen Codeschnipsel lässt sich der Status (Entwurf, Geplant
 
 Eingefügt wird der Code in die function.php deines Themes:
 
-<div class="wp_syntax">
-  <table>
-    <tr>
-      <td class="line_numbers">
-        <pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre>
-      </td>
-      
-      <td class="code">
-        <pre class="php" style="font-family:monospace;">add_action('admin_footer','posts_status_color');
+```php
+add_action('admin_footer','posts_status_color');
 function posts_status_color(){
-?&gt;
+?>
 .status-draft{background: #FCE3F2 !important;}
 .status-pending{background: #87C5D6 !important;}
 .status-publish{/* no background keep wp alternating colors */}
 .status-future{background: #C6EBF5 !important;}
 .status-private{background:#F2D46F;}
-<span style="color: #000000; font-weight: bold;">&lt;?php</span> 
-<span style="color: #009900;">&#125;</span></pre>
-      </td>
-    </tr>
-  </table>
-</div>
+<?php 
+}
+```
 
 via [WPsnipp.com][1]
 
