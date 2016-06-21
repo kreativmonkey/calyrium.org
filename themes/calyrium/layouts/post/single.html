@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+    <main>
+      <article class="blog-article">
+        <p class="type">{{ .Type }}</p>
+        <h1>{{ .Title }}</h1>
+	<p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+        {{ .Content }}
+        <hr>
+	<p class="author">
+		{{ if .Params.author }}
+			{{ .Params.author }}
+		{{ else }}
+			Kreativmonkey
+		{{end}}
+	<p>
+      </article>
+    </main>
+{{ partial "footer.html" . }}
