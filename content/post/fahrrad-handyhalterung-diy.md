@@ -1,17 +1,28 @@
-+++
-Categories = [
-    "DIY",
-    "Hobby",
-  ]
-Tags = [
-    "Fahrrad",
-    "Smartphone",
-    "Handyhalterung",
-    "Biken"
-  ]
-date = "2016-05-24T17:26:00"
-title = "Fahrrad Handyhalterung DIY"
-+++
+{
+  "Categories": [
+    "Develop",
+    "Arch Linux",
+    "Tutorial"
+  ],
+  "Description": "",
+  "Tags": [
+    "Nginx",
+    "Arch Linux",
+    "Invoiceninja",
+    "Invoice"
+  ],
+  "author": "",
+  "date": "2016-05-24T17:26:00",
+  "description": "",
+  "draft": true,
+  "featured": "false",
+  "featuredalt": "",
+  "featuredpath": "",
+  "linktitle": "",
+  "menu": "blog",
+  "title": "fahrrad handyhalterung diy",
+  "type": "post"
+}
 
 Vor zwei Wochen habe ich mir ein neues Fahrrad zugelegt. Einen Bikecomputer wollte ich keinen anschrauben da ich eh meistens mein Handy dabei habe und mit GPS sogar meine Route aufzeichnen lassen kann. Auch Ingress spielen macht mit Fahrrad eindeutig mehr Spaß da man schneller von a nach b kommt. Um das Handy immer im Blick zu haben und auch mal als Navi verwenden zu können, musste eine Fahrradhalterung her. Zwei Modelle sind mir dabei besonders ins Auge gefallen.
 
