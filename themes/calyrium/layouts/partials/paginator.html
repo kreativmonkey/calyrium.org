@@ -5,32 +5,22 @@
 {{ $pag := $.Paginator }}
 {{ if gt $pag.TotalPages 1 }}
 <div class="pagination">
-
-    {{ with $pag.First }}
-        <!-- if you prefer characters instead use the following line -->
-        <!-- <a href="{{ .URL }}" aria-label="First" class="label-pagination"><span aria-hidden="true">&laquo;&laquo;</span></a> -->
-        <!-- fa-lg is supposedly dynamic size. You can use fa-1x to fa-5x and probably even more, check http://fontawesome.io -->
-        <a href="{{ .URL }}" aria-label="First" class="label-pagination"><i class="fa fa-angle-double-left fa-lg"></i></a>
-    {{ end }}
-
+  <ul>
     {{ if $pag.HasPrev }}
     <!-- <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><span aria-hidden="true">&laquo;</span></a> -->
-        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><i class="fa fa-angle-left fa-lg"></i></a>
+        <li class="page-prev"><a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination">Prev</a></i>
     {{ end }}
-
-    {{ range $pag.Pagers }}
-        <a href="{{ .URL }}" class="label-pagination">{{ .PageNumber }}</a>
-    {{ end }}
-
+    <li>
+      <ul>
+        {{ range $pag.Pagers }}
+          <li><a href="{{ .URL }}" class="lable-pagination">{{ .PageNumber }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
     {{ if $pag.HasNext }}
     <!-- <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination"><span aria-hidden="true">&raquo;</span></a> -->
-        <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination"><i class="fa fa-angle-right fa-lg"></i></a>
+        <li class="page-next"><a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination">Next</a></li>
     {{ end }}
-
-    {{ with $pag.Last }}
-    <!-- <a href="{{ .URL }}" aria-label="Last"><span aria-hidden="true" class="label-pagination">&raquo;&raquo;</span></a> -->
-        <a href="{{ .URL }}" aria-label="Last"><i class="fa fa-angle-double-right fa-lg"></i></a>
-    {{ end }}
-
+  </ul>
 </div>
 {{ end }}
