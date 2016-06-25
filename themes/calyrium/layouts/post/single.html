@@ -5,6 +5,11 @@
         <h1>{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</h1>
 	<p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
         {{ .Content }}
+        <ul id="tags">
+            {{ range .Params.tags }}
+                <li><a href="tags/{{ . | urlize }}">{{ . }}</a></li>
+            {{end}}
+        </ul>
         <hr>
 	<p class="author">
 		{{ if .Params.author }}
