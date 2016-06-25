@@ -11,4 +11,5 @@ format: video
 ---
 Passend zu [meinem Artikel][1] hat Florian von Bitbastelei eine Video zum bau einer Fahrradhalterung gemacht.
 
+{{< youtube div2e2E_tBA >}}
  [1]: http://calyrium.org/2013/05/07/fahrrad-handyhalterung-diy-bikepad/ "Fahrrad Handyhalterung DIY Bikepad"
