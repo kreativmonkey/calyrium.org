@@ -1,12 +1,12 @@
 ---
 title: Links aus einem Artikel filtern und am ende Ausgeben
 author: Kreativmonkey
-layout: post
+
 date: 2012-08-06
 url: /2012/08/06/links-aus-einem-artikel-filtern-und-am-ende-ausgeben/
 categories:
   - Tutorial
-  - Wordpress
+  - WordPress
 tags:
   - auslesen
   - ersetzen

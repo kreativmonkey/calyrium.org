@@ -1,7 +1,7 @@
 ---
 title: Fahrradhalterung im eigenbau – Bitbastelei
 author: Kreativmonkey
-layout: post
+
 date: 2014-09-19
 url: /2014/09/19/fahrradhalterung-im-eigenbau-bitbastelei/
 categories:

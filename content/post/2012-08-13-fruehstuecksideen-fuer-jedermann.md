@@ -1,7 +1,7 @@
 ---
 title: Frühstücksideen für jedermann
 author: Kreativmonkey
-layout: post
+
 date: 2012-08-13
 url: /2012/08/13/fruehstuecksideen-fuer-jedermann/
 categories:

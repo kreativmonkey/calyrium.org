@@ -18,7 +18,7 @@
     "Develop"
   ],
   "date": "2016-05-22T12:16:00",
-  "description": "Um die Anzahl der Artikelaufrufe in Wordpress zu erhalten benötigt es kein Plugin. Mit einigen Zeilen Code kannst du dir ein Plugin getrost sparen.",
+  "description": "Um die Anzahl der Artikelaufrufe in WordPress zu erhalten benötigt es kein Plugin. Mit einigen Zeilen Code kannst du dir ein Plugin getrost sparen.",
   "draft": false,
   "featured": "false",
   "featuredalt": "",

@@ -1,7 +1,7 @@
 ---
 title: Aipi – Luftmessung mit dem RaspberryPi
 author: Kreativmonkey
-layout: post
+
 date: 2015-01-18
 url: /2015/01/18/aipi-luftmessung-mit-dem-raspberrypi/
 categories:

@@ -1,12 +1,12 @@
 ---
 title: Google Maps Karte einbinden ohne Plugin (API V3)
 author: Kreativmonkey
-layout: post
+
 date: 2012-04-13
 url: /2012/04/13/google-maps-karte-ohne-plugin-api-v3/
 categories:
   - Tutorial
-  - Wordpress
+  - WordPress
 tags:
   - API V3
   - featured
@@ -14,7 +14,7 @@ tags:
   - Googlemaps
   - Javascript
   - Maps
-  - Wordpress
+  - WordPress
 
 ---
 Auf [einem meiner Projekte][1] wollte ich eine Google Maps Karte integrieren um die Stellenanzeigen und Events optisch auf zu peppen und den Ort zu Visualisieren. Hierfür kann und möchte ich aus verschiedenen Gründen kein Plugin verwenden. Erstens sind die Plugins nicht immer sauber Programiert und laden den Code an stellen wo es unnütze ist und zweitens tragen verschiedene Kunden die Events und Stellenanzeigen ein und dies macht die Nutzung eines Plugins noch schwieriger.

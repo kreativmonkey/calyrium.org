@@ -12,13 +12,13 @@ Tags = [
     "Artikelaufrufe"
     ]
 date = "2012-06-13T14:33:55Z"
-title = "Wordpress: Artikel aufrufe erfassen ohne plugin"
+title = "WordPress: Artikel aufrufe erfassen ohne plugin"
 author = "Kreativmonkey"
 
 +++
-Aktuell habe ich versucht den Aufruf von Artikel ohne Plugins wie [WP-PostViews](http://wordpress.org/extend/plugins/wp-postviews/ "Link zum Plugin WP-PostViews") zu erfassen. Ich möchte die Artikelaufrufe zählen um in der Sidebar eine Liste der am häufigsten gelesenen Artikel ein zu fügen. Im folgenden habe ich mein Vorgehen erklärt.
+Aktuell habe ich versucht den Aufruf von Artikel ohne Plugins wie [WP-PostViews](wordpress.org/extend/plugins/wp-postviews/ "Link zum Plugin WP-PostViews") zu erfassen. Ich möchte die Artikelaufrufe zählen um in der Sidebar eine Liste der am häufigsten gelesenen Artikel ein zu fügen. Im folgenden habe ich mein Vorgehen erklärt.
 
-Auf der Hilfreichen Webseite [WPsnipp.com](http://wpsnipp.com "Wordpress Code Snippets") habe ich den entsprechenden Codeschnipsel gefunden den ich zum Zählen der Aufrufe benötige ([Wordpress Track post views without a plugin using post meta](http://wpsnipp.com/index.php/functions-php/track-post-views-without-a-plugin-using-post-meta/)). Zum speichern der Anzahl nutze ich wie das Plugin die Benutzerdefinierten Felder wodurch ich ohne Probleme die Anzahl der aufrufe die bisher gezählt wurden übernehmen kann.
+Auf der Hilfreichen Webseite [WPsnipp.com](http://wpsnipp.com "WordPress Code Snippets") habe ich den entsprechenden Codeschnipsel gefunden den ich zum Zählen der Aufrufe benötige ([WordPress Track post views without a plugin using post meta](http://wpsnipp.com/index.php/functions-php/track-post-views-without-a-plugin-using-post-meta/)). Zum speichern der Anzahl nutze ich wie das Plugin die Benutzerdefinierten Felder wodurch ich ohne Probleme die Anzahl der aufrufe die bisher gezählt wurden übernehmen kann.
 
 ## Zählen der Artikelaufrufe
 
