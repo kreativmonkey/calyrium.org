@@ -5,8 +5,12 @@ layout: post
 date: 2012-06-13
 url: /2012/06/13/postpage-status-im-adminbereich-hervorheben/
 categories:
+  - Webwork
+tags:
   - Wordpress
-
+  - Snipped
+  - Tipps
+  - NoPlugin
 ---
 Mit dem Folgenden kleinen Codeschnipsel lässt sich der Status (Entwurf, Geplant, Privat&#8230;) im Adminbereich hervorheben.
 
