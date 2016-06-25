@@ -5,7 +5,6 @@ layout: post
 date: 2012-04-09
 url: /2012/04/09/exiftool-aufnahmedatum-mehrerer-bilder-von-unterschiedlichen-digicams-korrigieren/
 categories:
-  - Fotografie
   - Linux
   - Tutorial
 tags:
