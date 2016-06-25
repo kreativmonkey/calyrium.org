@@ -1,5 +1,5 @@
 ---
-title/Page Status im Adminbereich hervorheben
+title: Post/Page Status im Adminbereich hervorheben
 author: Kreativmonkey
 date: 2012-06-13
 url: /2012/06/13/postpage-status-im-adminbereich-hervorheben/
