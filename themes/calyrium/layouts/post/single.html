@@ -7,7 +7,6 @@
         {{ .Content }}
         {{ if .Params.tags }}
         <ul id="tags">
-            <li><img src="/img/iconset/tags.svg" /></li>
             {{ range .Params.tags }}
                 <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
             {{end}}
