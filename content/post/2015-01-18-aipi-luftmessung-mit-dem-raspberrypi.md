@@ -12,7 +12,7 @@ tags:
   - Luftmessung
   - Raspberry Pi
 draft: false
-
+type: video
 ---
 Zusammen mit Florian von BitBastelei habe ich ein Airpi Shield für den RaspberryPi zusammengebaut. 
 Worauf man achten muss und ob das ganze gelungen ist seht ihr in der Folge 122 von BitBastelei.
