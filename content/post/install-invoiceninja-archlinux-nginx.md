@@ -1,41 +1,17 @@
-{
-  "Categories": [
-    "Develop",
-    "Arch Linux",
-    "Tutorial"
-  ],
-  "Description": "",
-  "Draft": false,
-  "Tags": [
-    "Invoice",
-    "Nginx",
-    "Arch Linux",
-    "Invoiceninja"
-  ],
-  "author": "",
-  "categories": [
-    "WordPress",
-    "Develop"
-  ],
-  "date": "2016-05-22T12:16:00",
-  "description": "Um die Anzahl der Artikelaufrufe in WordPress zu erhalten benötigt es kein Plugin. Mit einigen Zeilen Code kannst du dir ein Plugin getrost sparen.",
-  "draft": false,
-  "featured": "false",
-  "featuredalt": "",
-  "featuredpath": "",
-  "image": "image.jpg",
-  "linktitle": "",
-  "menu": "blog",
-  "tags": [
-    "No Plugin",
-    "Funktion",
-    "Artikel",
-    "WordPress"
-  ],
-  "title": "Install Invoiceninja Archlinux with Nginx",
-  "toc": true,
-  "type": "post"
-}
+---
+Categories:
+  - Webwork
+  - Tutorial
+Tags:
+  - Invoice
+  - Nginx
+  - Arch Linux
+  - Invoiceninja
+Draft: false
+date: 2016-05-22T12:16:00
+description: Um die Anzahl der Artikelaufrufe in WordPress zu erhalten benötigt es kein Plugin. Mit einigen Zeilen Code kannst du dir ein Plugin getrost sparen.
+title: Install Invoiceninja Archlinux with Nginx
+---
 
 In this tutorial i’ll see how to install Invoice Ninja on a Arch Linux VPS with MariaDB, PHP-FPM and Nginx. Invoice Ninja is a free, open-source solution for invoicing and billing customers and it’s based on Laravel framework.
 
@@ -62,7 +38,7 @@ Requirements:
 First update the system:
 
     pacman -Syu
-    
+
 
 Setup MariaDB
 -------------
@@ -71,7 +47,7 @@ Installing MariaDB ([More Information on Archlinux.org](https://wiki.archlinux.o
 ):
 
     pacman -S mariadb
-    
+
 
 When the installation is complete, run the following command to secure your installation:
 
@@ -100,8 +76,8 @@ Uncomment the following Modules for PHP `vim /etc/php/php.ini`:
     extension=curl.so
     extension=gd.so
     extension=gmp.so
-    extension=iconv.so 
-    extension=mcrypt.so 
+    extension=iconv.so
+    extension=mcrypt.so
     extension=pdo_mysql.so
     extension=zip.so
 
@@ -118,7 +94,7 @@ rm ininja.pass.key
 openssl req -new -key ininja.key -out ininja.csr
 openssl x509 -req -days 365 -in ininja.csr -signkey ininja.key -out ininja.crt
 ```
-    
+
 Create a new Nginx Serverblock `vim /etc/nginx/sites-availeble/invoiceninja`:
 
 ```Nginx
@@ -126,7 +102,7 @@ server {
     listen  80;
     listen  [::]:80 ipv6only=on;
     server_name my_invoiceninja.domain.tld;
-    
+
     # Return all requests to https
     return  https://$host$request_uri;
 }
@@ -134,7 +110,7 @@ server {
     listen  443;
     listen  [::]:443 ipv6only=on;
     server_name my_invoiceninja.domain.tld;
-    
+
     ssl on;
     ssl_certificate     /etc/nginx/ssl/ininja.crt;
     ssl_certificate_key /etc/nginx/ssl/ininja.key;
@@ -143,29 +119,29 @@ server {
     ssl_ciphers                 'AES128+EECDH:AES128+EDH:!aNULL';
     ssl_protocols               TLSv1 TLSv1.1 TLSv1.2;
     ssl_prefer_server_ciphers   on;
-    
-    charset utf-8; 
-    
+
+    charset utf-8;
+
     root /srv/http/your_ninja_site/public;
     index index.php index.html index.htm;
-    
+
     ## Invoiceninja Settings
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
-    
+
     location = /favicon.ico { access_log off; log_not_found off; }
     location = /robots.txt  { access_log off; log_not_found off; }
-    
+
     access_log  /var/log/nginx/ininja.access.log;
     error_log   /var/log/nginx/ininja.error.log;
-    
+
     sendfile off;
-    
+
     location ~ /\.ht {
-        deny all; 
+        deny all;
     }
-    
+
     ## FastCGI Setting
     location ~ \.php$ {
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
@@ -173,7 +149,7 @@ server {
             return 404;
         }
         # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-        
+
         fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
         fastcgi_read_timeout 30m;
         fastcgi_param PATH_INFO $fastcgi_path_info;
