@@ -6,7 +6,7 @@
         <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
         {{ .Content }}
         {{ if .Params.tags }}
-        <ul id="tags">
+        <ul id="tags"> <img src="/img/iconset/tags.svg" style="width:1em">
             {{ range .Params.tags }}
                 <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
             {{end}}
