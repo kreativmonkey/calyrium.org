@@ -2,4 +2,4 @@ Caddyfile
 Caddyfile.back
 wp-content
 /public
-config.toml
+config.toml*
