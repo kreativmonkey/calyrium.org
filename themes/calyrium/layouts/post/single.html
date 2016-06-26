@@ -3,7 +3,7 @@
       <article class="blog-article">
         <p class="type">{{ .Type }}</p>
         <h1>{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</h1>
-	<p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
+        <p class="date">{{ .Date.Format "Jan 2, 2006" }}</p>
         {{ .Content }}
         {{ if .Params.tags }}
         <ul id="tags">
@@ -13,25 +13,27 @@
         </ul>
         {{ end }}
         <hr>
-	<p class="author">
-		{{ if .Params.author }}
-			{{ .Params.author }}
-		{{ else }}
-			Kreativmonkey
-		{{end}}
-	<p>
+      	<p class="author">
+      		{{ if .Params.author }}
+      			{{ .Params.author }}
+      		{{ else }}
+      			Kreativmonkey
+      		{{end}}
+      	<p>
+        <div class="pagination">
+          <ul class="pager blog-pager">
+            {{ if .PrevInSection }}
+            <li class="previous">
+              <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Vorheriger Artikel</a>
+            </li>
+            {{ end }}
+            {{ if .NextInSection }}
+            <li class="next">
+              <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Nächster Artikel &rarr;</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
       </article>
-      <ul class="pager blog-pager">
-        {{ if .PrevInSection }}
-        <li class="previous">
-          <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; Previous Post</a>
-        </li>
-        {{ end }}
-        {{ if .NextInSection }}
-        <li class="next">
-          <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">Next Post &rarr;</a>
-        </li>
-        {{ end }}
-      </ul>
     </main>
 {{ partial "footer.html" . }}
