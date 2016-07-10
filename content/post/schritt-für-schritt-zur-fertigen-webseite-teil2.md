@@ -14,9 +14,9 @@ In diesem Teil wollen wir auf die benötigten Dateien und deren Strukturierung k
 
 ## Ordnung muss sein
 Im [ersten Teil]({{< ref "schritt-für-schritt-zur-fertigen-webseite-teil1.md" >}}) habe ich euch erklärt mit den Tools und Hilfsmittel die ich verwende Vertraut gemacht.
-Nun wollen wir daraus einen Startpunkt für unser Webprojekt erstellen. Hierzu nehme ich das [HTML5 Boilerplate]() als Vorlage und werde mir nacher einzelne Dateien daraus Kopieren.
+Nun wollen wir daraus einen Startpunkt für unser Webprojekt erstellen. Hierzu nehme ich das [HTML5 Boilerplate]() als Vorlage und werde mir nachher einzelne Dateien daraus Kopieren.
 Zunächsteinmal legen wir einen Ordner für unser Projekt an. 
-Innerhalb des Projektordners lege ich nun die folgenden Ordner an, eine Erklärung folgt im nachhinein.
+Innerhalb des Projektordners lege ich nun die folgenden Ordner an, eine Erklärung folgt im Nachhinein.
 
 ```
 - CSS
@@ -82,9 +82,9 @@ favicon.ico
 .htaccess
 ```
 
-aus der index.html erstellen wir mit hilfe von "[HTML2Jade]()" eine Jade-Datei die wir im Projektordner ablegen.
+aus der index.html erstellen wir mit Hilfe von "[HTML2Jade]()" eine Jade-Datei die wir im Projektordner ablegen.
 
-Danach befüllen wir den Sass-Ordner mit inhalt. Zunächst legen wir in jedem der 4 Ordner eine datei namens ``_index.sass`` an, hier werden später die Dateien aus dem jeweiligen Ordner gebündelt importiert. Danach legen wir, direkt im Sass-Ordner, noch eine Datei namens ``app.sass`` an mit dem folgenden Inhalt:
+Danach befüllen wir den Sass-Ordner mit Inhalt. Zunächst legen wir in jedem der 4 Ordner eine Datei namens ``_index.sass`` an, hier werden später die Dateien aus dem jeweiligen Ordner gebündelt importiert. Danach legen wir, direkt im Sass-Ordner, noch eine Datei namens ``app.sass`` an mit dem folgenden Inhalt:
 
 ```sass
 @import 1-tools/index
@@ -95,7 +95,7 @@ Danach befüllen wir den Sass-Ordner mit inhalt. Zunächst legen wir in jedem de
 Nun organisieren wir uns die Libarys und Framworks die wir verwenden wollen und fügen sie unter 1-tools hinzu. 
 In meinem Fall sind das die Libarys "[Bourbon](http://bourbon.io/)" und "[Neat](http://neat.bourbon.io/)" sowie "[Bitters](http://bitters.bourbon.io/)". 
 Bourbon und Neat sind reine Libarys welche kein eigenes CSS importieren. 
-Bitters hingegen fügt css für die Formatierung der wichtigsten HTML elemente hinzu und benötigt zur korrekten funktion noch [Normalize.css](https://necolas.github.io/normalize.css/) welches wir auch direkt dort anlegen.
+Bitters hingegen fügt CSS für die Formatierung der wichtigsten HTML Elemente hinzu und benötigt zur korrekten Funktion noch [Normalize.css](https://necolas.github.io/normalize.css/) welches wir auch direkt dort anlegen.
 
 Danach sollte unser Projektordner wie folgt aussehen:
 
@@ -125,7 +125,7 @@ Danach sollte unser Projektordner wie folgt aussehen:
 ```
 
 ## Versionierung
-Wenn ihr nun eine Versionsverwaltung verwenden wollt dann könnt ihr an dieser Stelle den Ortner Iniziieren. 
+Wenn ihr nun eine Versionsverwaltung verwenden wollt dann könnt ihr an dieser Stelle den Ordner Initiieren. 
 Setzt ihr Git ein dann macht ihr das indem ihr im Terminal zu eurem Projektordner wechseln und dort ``git init`` eingebt. 
 Mithilfe von ``git add -A`` und ``git -m "Init"`` initiiert ihr die Dateien.
 
