@@ -4,7 +4,7 @@ Description = ""
 Tags = ["Development", "golang"]
 date = "2016-07-09T17:38:28+02:00"
 menu = "main"
-title = "Schritt für Schritt zur fertigen Webseite - Teil 2 Projekt Strukturieren :: Entwurf"
+title = "Schritt für Schritt zur fertigen Webseite - Teil 2 Projekt Strukturieren"
 
 +++
 In diesem Teil der Serie Schritt für Schritt zur fertigen Webseite geht es um die Strukturierung des Projekts. 
