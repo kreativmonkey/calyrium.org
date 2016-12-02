@@ -65,6 +65,7 @@ SSID: %OpenNetwork
 1. Plugins -> OpenVpn Tasker Plugin
     Konfiguration: auswahl der VPN verbindung die Aufgebaut werden soll.
 
+An dieser Stelle habe ich den Task so geschrieben das er eigentlich das Aktuelle Netzwerk wieder auf Platz 1 im Array setzt damit immer die am häufigst verwendeten Netzwerke ganz vorne stehen. Ob das jedoch einen Unterschied bei der Geschwindigkeit macht weiß ich nicht. Der Task funktioniert auf alle fälle auch ohne diese Einstellung.
 #### Exit Task
 2. Plugins -> OpenVpn Tasker Plugin
     Konfiguration: Disconnect
