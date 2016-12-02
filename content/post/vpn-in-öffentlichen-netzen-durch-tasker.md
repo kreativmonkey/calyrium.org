@@ -78,3 +78,5 @@ Bedingung 1: `Status -> Netzwerk -> Wifi Verbunden`
 Hier ist es euch überlassen was für Tasks ausgeführt werden sollen. Ich deaktiviere zum Beispiel meine Stromsparprofile und schalte das Handy laut.
 
 Ich würde mich freuen wenn ihr mir einen Kommentar zu diesem Profil in der [Taskergruppe](https://plus.google.com/101620447980386746176/posts/4qjaan93ugc?sfc=true) hinterlassen würdet. Berichtet mir eure Probleme oder Verbessungesvorschläge für diese Umsetzung.
+
+![Dialog öffentlich oder privates Netwerk](/images/vpn_tasker_dialog.png)
