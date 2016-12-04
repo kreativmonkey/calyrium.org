@@ -5,6 +5,7 @@ Tags = ["Tasker", "VPN", "Sicherheit"]
 date = "2016-12-02T09:40:20+01:00"
 menu = "main"
 title = "VPN in öffentlichen Netzen durch Tasker"
+aliases = "/post/vpn-in-%C3%B6ffentlichen-netzen-durch-tasker/"
 +++
 
 Tasker ist eine App für das Smartphone zum Automatisieren von Abläufen. Da sich das Smartphone in der Regel automatisch mit einem bekannten Netzwerk verbindet ist es notwendig das es auch von selbst entscheidet das es einen VPN Tunnel aufbauen muss. Dies ist jedoch nur in öffentlichen Netzwerken der Fall und somit habe ich mir gedanken gemacht wie man das umsetzen kann.
