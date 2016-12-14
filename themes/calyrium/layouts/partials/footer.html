@@ -3,33 +3,32 @@
 <!--Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer-->
 <!--</div>-->
 <footer role="contentinfo" class="footer-2">
-  <ul>
-    <li><a href="javascript:void(0)">About</a></li>
-    <li><a href="javascript:void(0)">Contact</a></li>
-  </ul>
-  <div class="footer-secondary-links">
     <ul>
-      <li><a href="{{ .Site.BaseURL }}impressum">Impressum und Disclaimer</a></li>
-      <li><a href="{{ .Site.BaseURL }}datenschutz">Datenschutz</a></li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
     </ul>
-  </div>
+    <div class="footer-secondary-links">
+        <ul>
+            <li><a href="{{ .Site.BaseURL }}impressum">Impressum und Disclaimer</a></li>
+            <li><a href="{{ .Site.BaseURL }}datenschutz">Datenschutz</a></li>
+        </ul>
+    </div>
 </footer>
 </body>
 <script src="js/dist.js"></script>
 <!-- Piwik -->
 <script type="text/javascript">
-          var _paq = _paq || [];
-            _paq.push(["setDomains", ["*.calyrium.org","*.www.calyrium.org","*.calyrium.org","*.www.calyrium.org"]]);
-              _paq.push(['trackPageView']);
-                _paq.push(['enableLinkTracking']);
-                (function() {
-                        var u="//piwik.oc4.de/";
-                            _paq.push(['setTrackerUrl', u+'piwik.php']);
-                                _paq.push(['setSiteId', '4']);
-                                    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                                        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-                                          
-                })();
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var u="//piwik.oc4.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+
+})();
 </script>
 <noscript><p><img src="//analytics.mta-r.de/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
