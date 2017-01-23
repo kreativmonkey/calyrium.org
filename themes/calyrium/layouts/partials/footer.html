@@ -2,17 +2,24 @@
 <!--<div class="wrapper-for-content-outside-of-footer">-->
 <!--Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer-->
 <!--</div>-->
-<footer role="contentinfo" class="footer-2">
-    <ul>
+<footer class="footer" role="contentinfo">
+  <div class="footer-info">
+    <div class="footer-left">
+      <ul>
         <li><a href="javascript:void(0)">About</a></li>
         <li><a href="javascript:void(0)">Contact</a></li>
-    </ul>
-    <div class="footer-secondary-links">
-        <ul>
-            <li><a href="{{ .Site.BaseURL }}impressum">Impressum und Disclaimer</a></li>
-            <li><a href="{{ .Site.BaseURL }}datenschutz">Datenschutz</a></li>
-        </ul>
+      </ul>
     </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="{{ .Site.BaseURL }}impressum">Impressum und Disclaimer</a></li>
+        <li><a href="{{ .Site.BaseURL }}datenschutz">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="licence">
+    <p>Sofern nicht anders angegeben befinden sich die Inhalte unter der <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz<img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a></p>
+  </div>
 </footer>
 </body>
 <script src="js/dist.js"></script>

@@ -45,7 +45,9 @@ Bedingung 2: `Status -> Netzwerk -> Wifi Verbunden`
   * Privat (Action = Array Push -> %PrivNetArray position 1 wert %ConnectedNetwork)
   * Öffentlich (Action = Arrad Push -> %OpenNetArray position 1 wert %ConnectedNetwork)
 5. Variable -> Array Process -> %PrivNetArray typ Remove Duplicates
-6. Variable -> Array Process -> %OpenNetArray typ Remove Duplicates
+6. Variable -> Array Process -> %PrivNetArray typ Squash
+7. Variable -> Array Process -> %OpenNetArray typ Remove Duplicates
+8. Variable -> Array Process -> %OpenNetArray typ Squash
 7. Task -> For -> Variable %netzwork Einträge %PrivNetArray()
 8. Variable -> Variable Setzen -> %privnet zu %network/ Hinzufügen: Aktiviert
 9. Task -> End For
