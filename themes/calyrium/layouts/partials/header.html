@@ -13,7 +13,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- RSS -->
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if .RSSLink }}
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
     <!-- External fonts -- PLEASE REMOVE ---->
     <link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Sanchez:400italic,400" rel="stylesheet" type="text/css">
