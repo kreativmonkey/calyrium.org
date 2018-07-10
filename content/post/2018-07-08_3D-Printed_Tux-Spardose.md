@@ -7,6 +7,7 @@ categories = ["Linux", "DIY"]
 postimage = "/images/tux-moneybox/tux-final.JPG"
 description = "Mit OpenSCAD, 3D-Druck, Farbe und Pinsel zu einer Tux-Spardose für unsere LUG."
 author = "kreativmonkey"
+aliases = ["/posts/vom-code-zur-tux-spardose"]
 +++
 
 Seit einigen Jahren suchen wir für unsere Linux Usergroup (LUG) eine Spardose in Form eines Tux. Leider scheint der Markt hierfür nicht groß genug zu sein. Dank der 3D-Drucktechnik lassen sich solche Objekte mittlerweile auch gut selbst fertigen. Nur hat sich niemand finden können der die Fähigkeit und Zeit zur Erstellung einer solchen Spardose hatte. 
@@ -23,7 +24,7 @@ Zunächst habe ich den Code modularisiert und parametrisiert, damit ich den Tux 
 
 ![Printing Process](/images/tux-moneybox/tux-print.gif  "Tux Printing Process")
 
-Bei einem Kollegen konnte ich den Tux in Auftrag geben. Dieser hat ihn mit einem MakerBot gedruckt. Die Höhe betrug 1mm mit einem Düsendurchmesser von 0,4mm. Die Druckgeschwindigkeit lag bei ca. 40mm/s. Hierbei lag die Druckzeit bei langen 96 Stunden. 
+Bei einem Kollegen konnte ich den Tux in Auftrag geben. Dieser hat ihn mit einem UltiMaker2 gedruckt. Die Höhe betrug 0,1mm mit einem Düsendurchmesser von 0,4mm. Die Druckgeschwindigkeit lag bei ca. 40mm/s. Hierbei lag die Druckzeit bei langen 96 Stunden. 
 
 Der Tux lässt sich, bis auf eine kleine Stütze in der mitte (für den obersten Teil des Kopfes), ohne Stützmaterial drucken. Die Einstellungen sorgten für einen sehr detailierten Druck mit einer relativ glatten Oberfläsche. Durch das schwarze Filament müsste man dem Tux nur geringfügig Farbe angedeihen lassen. Wieso ich mich dann doch umentschieden habe und auch dazu rate, erkläre ich später.
 
