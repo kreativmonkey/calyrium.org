@@ -10,6 +10,8 @@ author = "kreativmonkey"
 aliases = ["/posts/vom-code-zur-tux-spardose"]
 +++
 
+**Audiocast zum Artikel:** [https://soundcloud.com/sebastian-p-253935754/vom-code-zur-tux-spardose](https://soundcloud.com/sebastian-p-253935754/vom-code-zur-tux-spardose) 
+
 Seit einigen Jahren suchen wir für unsere Linux Usergroup (LUG) eine Spardose in Form eines Tux. Leider scheint der Markt hierfür nicht groß genug zu sein. Dank der 3D-Drucktechnik lassen sich solche Objekte mittlerweile auch gut selbst fertigen. Nur hat sich niemand finden können der die Fähigkeit und Zeit zur Erstellung einer solchen Spardose hatte. 
 Auch mir fehlte jegliche Zeit mich in die, doch recht komplizierten, 3D-Tools einzuarbeiten. Vor kurzem habe ich dann [OpenSCAD](http://www.openscad.org/) entdeckt. Hierbei handelt es sich um eine CAD Software bei der man die Objekte codet und nicht mit der Maus und vielen Tastenkürzeln erstellt. Im ersten Moment klingt das alles andere als einfach, es stellt sich jedoch heraus, dass man dadurch das Programm viel schneller erlernt. 
 
