@@ -28,7 +28,11 @@ Die durch den Cookie erzeugten Informationen über die Benutzung dieser Website 
 
 Wenn Sie mit der Speicherung und Nutzung Ihrer Daten nicht einverstanden sind, können Sie die Speicherung und Nutzung hier deaktivieren. In diesem Fall wird in Ihrem Browser ein Opt-Out-Cookie hinterlegt der verhindert, dass Piwik Nutzungsdaten speichert. Wenn Sie Ihre Cookies löschen hat dies zur Folge, dass auch das Piwik Opt-Out-Cookie gelöscht wird. Das Opt-Out muss bei einem erneuten Beuch unserer Seite wieder aktiviert werden.
 
-_**[[Hier PIWIK iframe-Code einfügen] (Klick für die Anleitung)](http://piwik.org/docs/privacy/)**_
+<iframe
+        style="border: 0; height: 200px; width: 600px;"
+        src="http://analytics.mta-r.de/index.php?module=CoreAdminHome&action=optOut&language=de&backgroundColor=&fontColor=&fontSize=&fontFamily="
+        >
+        </iframe>
 
 **Cookies**
 
