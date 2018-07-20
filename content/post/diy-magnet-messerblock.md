@@ -11,6 +11,8 @@ author = "kreativmonkey"
 Vor einiger Zeit habe ich für unsere Küche einen magnetichen Messerblock gekauft. Als nun eine Hochzeit anstand hat sich das Brautpaar einen solchen Messerblock gewünscht. Da ich jedoch das Geld lieber in gute Messer investieren wollte habe ich mich entschieden selbst einen magnetischen Messerblock zu bauen. 
 Da es die Zeit erlaubte und ich meine Skills im Holzwerken ausweiten wollte, habe ich mich entschlossen ein rohes Holzstück zu verwenden. 
 
+****Audiocast:* [https://soundcloud.com/sebastian-p-253935754/diy-magnetischer-messerblock](https://soundcloud.com/sebastian-p-253935754/diy-magnetischer-messerblock) 
+
 ## Auf der Suche nach Holz
 Leider fehlt mir ein Garten/Hof auf dem man irgendwo altes abgestandenes Holz findet. Daher war klar, dass ich es irgendwo anders besorgen muss. Im Baumarkt gibt es zwar unbehandelte Holzstücke, jedoch nicht so recht das was ich gesucht habe. Und wenn, dann ist es gleich unbezahlbar. Zum Beispiel werden mittlerweile alte Holzbalken von abgerissenen Scheunen und co. für sehr viel Geld im Baumarkt angeboten. 
 Ich habe dann mal nach Sägewerken gegoogelt und bin nach einigen Telefonaten auch fündig geworden. Das Holz stand damit dann auch fest, denn das Sägewerk stellt Holzbohlen aus Eiche her. Ich konnte mir dann für einen kleinen Obolus ein paar Schnittreste mitnehmen.
